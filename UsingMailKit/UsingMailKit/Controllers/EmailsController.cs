@@ -25,5 +25,11 @@ namespace UsingMailKit.Controllers
             _emailService.Send(message);
             return Ok();
         }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("ok");
+        }
     }
 }
